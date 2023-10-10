@@ -1,4 +1,4 @@
-# DEVSU React Challange - Pichincha Bank
+# DEVSU React Challenge - Pichincha Bank
 
 ## Getting Started
 
