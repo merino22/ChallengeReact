@@ -1,5 +1,6 @@
 import React from "react";
 import { deleteProduct } from "../services/pichinchaService";
+import { useHistory } from "react-router-dom";
 
 interface ConfirmationModalProps {
     isOpen: boolean;
@@ -48,7 +49,6 @@ const ConfirmationModal: React.FC<ConfirmationModalProps> = ({ isOpen, onClose, 
           const response = await deleteProduct(content.id);
           console.log('Producto fue eliminado', response);
           window.location.reload();
-          return response;
         } catch (error) {
           console.log('Error: ', error);
         }

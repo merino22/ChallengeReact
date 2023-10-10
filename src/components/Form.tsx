@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import InputSkeleton from './skeletons/InputSkeleton';
 import LabelSkeleton from './skeletons/LabelSkeleton';
+import { useHistory } from 'react-router-dom';
 
 interface FormProps {
     onSubmit: (newProduct: any) => void;
@@ -135,9 +136,15 @@ const Form: React.FC<FormProps> = ({ onSubmit, productData, checked }) => {
         }
     }
 
+    const history = useHistory();
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         onSubmit(newProductData);
+        
+        if (env === 'development')
+            history.push('/');
+
         setNewProductData({
             id: '',
             name: '',
@@ -200,8 +207,8 @@ const Form: React.FC<FormProps> = ({ onSubmit, productData, checked }) => {
 
     useEffect(() => {
         const loadingTimeout = setTimeout(() => {
-            setLoading(true);
-        }, 2000); // Simular carga
+            setLoading(false);
+        }, 1500); // Simular carga
     
           return () => {
             clearTimeout(loadingTimeout);

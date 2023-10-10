@@ -42,7 +42,7 @@ const ProductList: React.FC = () => {
         console.error('Error fetching data:', error);
         setLoading(false);
       });
-    }, 2000); // Simular carga
+    }, 1500); // Simular carga
 
       updateScreenSize();
 
