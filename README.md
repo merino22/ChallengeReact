@@ -1,6 +1,4 @@
-# Project Name
-
-Brief project description.
+# DEVSU React Challange - Pichincha Bank
 
 ## Getting Started
 
