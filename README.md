@@ -1,59 +1,54 @@
-# DEVSU React Challenge - Pichincha Bank
+# Desafío DEVSU React - Banco Pichincha
 
-## Getting Started
+## Comenzando
 
-These instructions will help you set up and run the project on your local machine.
+Estas instrucciones te ayudarán a configurar y ejecutar el proyecto en tu máquina local.
 
-### Prerequisites
+### Prerrequisitos
 
-- Node.js and npm (Node Package Manager) should be installed on your system. You can download and install them from [nodejs.org](https://nodejs.org/).
+- Node.js y npm (Node Package Manager) deben estar instalados en tu sistema. Puedes descargarlos e instalarlos desde [nodejs.org](https://nodejs.org/).
 
-### Installing
+### Instalación
 
-Follow these steps to install and run the project:
+Sigue estos pasos para instalar y ejecutar el proyecto:
 
-1. Clone the repository to your local machine:
+1. Clona el repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/yourusername/your-project.git
+   git clone https://github.com/tunombredeusuario/tuproyecto.git
 
-
-2. Navigate to the project directory:
-
+2. Navega hasta el directorio del proyecto:
     ```bash
     cd ChallengeReact
 
-3. Install project dependencies
+3. Instala las dependencias del proyecto:
     ```bash
     npm install
 
-4. Create a .env file in the project root directory and add your environment variables. You can use the provided .env.example file as a template.
+4. Crea un archivo .env en el directorio raíz del proyecto y agrega tus variables de entorno. Puedes utilizar el archivo .env.example proporcionado como plantilla.
 
-5. Start the development server:
+5. Inicia el servidor de desarrollo:
     ```bash
     npm start
 
-The project should now be running on http://localhost:3000.
+El proyecto debería estar funcionando ahora en http://localhost:3000.
 
-### Running Tests
+### Ejecucion de Pruebas
+Este proyecto incluye un conjunto de pruebas utilizando Jest. Para ejecutar las pruebas, sigue estos pasos:
 
-This project includes a suite of tests using Jest. To run the tests, follow these steps:
+1. Navega hasta el directorio del proyecto, si aún no estás allí.
 
-1. Navigate to the project directory if you are not already there.
-
-2. Run the following command:
+2. Ejecuta el siguiente comando:
     ```bash
     npm test
 
-This will execute the tests, and you will see the test results in the console.
+Esto ejecutará las pruebas y verás los resultados en la consola.
 
-## Test Summary
+### Resumen de Pruebas
+El proyecto contiene un total de 10 conjuntos de pruebas con 29 pruebas.
 
-The project contains a total of 10 test suites with 29 tests.
-
-## Built With
-
-* React - The JavaScript library for building user interfaces.
-* TypeScript - A statically typed superset of JavaScript.
-* Jest - A JavaScript testing framework.
-* [Other dependencies or libraries used in the project]
+### Construido Con
+* React: La biblioteca de JavaScript para construir interfaces de usuario.
+* TypeScript: Un superconjunto de JavaScript con tipos estáticos.
+* Jest: Un marco de pruebas de JavaScript.
+* [Otras dependencias o bibliotecas utilizadas en el proyecto]
